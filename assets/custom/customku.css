@@ -1,0 +1,410 @@
+.button {
+  display: inline-flex;
+  height: 30px;
+  width: 80px;
+  border: 2px solid #e7ed51;
+  margin: 10px 10px 10px 10px;
+  color: #e7ed51;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.edit {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+
+/* First Button */
+
+#arrow-hover {
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  transform: translateX(60px);
+  opacity: 0;
+  -webkit-transition: all .25s cubic-bezier(.14, .59, 1, 1.01);
+  transition: all .15s cubic-bezier(.14, .59, 1, 1.01);
+  margin: 0;
+  padding: 0 5px;
+}
+
+a#button-1:hover img {
+  width: 15px;
+  opacity: 1;
+  transform: translateX(50px);
+}
+
+
+
+/* Seventh Button */
+
+#button-7 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-7 a {
+  position: relative;
+  left: 0;
+  transition: all .35s ease-Out;
+}
+
+#dub-arrow {
+  width: 100%;
+  height: 100%;
+  background: #e7ed51;
+  left: -200px;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+#button-7 img {
+  width: 20px;
+  height: auto;
+}
+
+#button-7:hover #dub-arrow {
+  left: 0;
+}
+
+#button-7:hover a {
+  left: 150px;
+}
+
+
+
+/* Sixth Button */
+
+#button-6 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-6 a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#spin {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  left: 70px;
+  top: 20px;
+  transform: rotate(0deg);
+  background: none;
+  position: absolute;
+  transition: all .5s ease-Out;
+}
+
+#button-6:hover #spin {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  left: -70px;
+  top: -70px;
+  background: #BFC0C0;
+  transform: rotate(80deg);
+}
+
+#button-6:hover a {
+  color: #2D3142;
+}
+
+
+
+
+/*==========================CARD===============================*/
+.card-counter{
+    box-shadow: 2px 2px 10px #DADADA;
+    margin: 5px;
+    padding: 20px 10px;
+    background-color: #fff;
+    height: 100px;
+    border-radius: 5px;
+    transition: .3s linear all;
+  }
+
+  .card-counter:hover{
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .3s linear all;
+  }
+
+  .card-counter.primary{
+    background-color: #007bff;
+    color: #FFF;
+  }
+
+  .card-counter.danger{
+    background-color: #ef5350;
+    color: #FFF;
+  }  
+
+  .card-counter.success{
+    background-color: #66bb6a;
+    color: #FFF;
+  }  
+
+  .card-counter.info{
+    background-color: #26c6da;
+    color: #FFF;
+  }  
+
+  .card-counter i{
+    font-size: 5em;
+    opacity: 0.2;
+  }
+
+  .card-counter .count-numbers{
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    font-size: 32px;
+    display: block;
+  }
+
+  .card-counter .count-name{
+    position: absolute;
+    right: 35px;
+    top: 65px;
+    font-style: italic;
+    text-transform: capitalize;
+    opacity: 0.5;
+    display: block;
+    font-size: 18px;
+  }
+/*==========================END CARD===============================*/
+
+
+/*==========================Padding===============================*/
+/*padding top-button*/
+.padding-tb{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/*padding top*/
+.padding-t{
+  padding-top: 20px;
+}
+.padding-b{
+  padding-bottom: 10px;
+}
+.padding-r {
+  padding-right: 10px;
+}
+
+
+/*==========================END PADDING TOP FORM===============================*/
+
+
+/*==========================TENGAH HORIZONTAL OR VERTIKAL===============================*/
+/*horizontal dan vertikal*/
+ .td-center{
+    text-align: center;
+    vertical-align: middle!important;
+  }
+.text-right{
+    text-align: right;
+    vertical-align: middle!important;
+  }
+
+/*vertikal*/
+ .td-left-center{
+    vertical-align: middle!important;
+  }
+/*==========================END TENGAH HORIZONTAL DAN VERTIKAL===============================*/
+
+/*==========================OPEN MODAL===============================*/
+/*open modal agar tidak padding right*/
+ body:not(.modal-open){
+  padding-right: 0px !important;
+}
+/*==========================END OPEN MODAL===============================*/
+
+/*==========================GAMBAR===============================*/
+.g-produk {
+  transition: transform .2s;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 10px;
+  width:100px;
+  height:100px;
+}
+
+.g-produk:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(2); 
+}
+
+.g-hasil{
+  transition: transform .2s;
+  margin: 0 auto;
+  object-fit: cover; 
+  border-radius: 10px;
+  width:150px;
+  height:150px;
+}
+.g-hasil:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(2); 
+}
+
+/*icon profil*/
+.icon-profil {
+  width: 50px;
+  height: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.g-produk-riwayat {
+  transition: transform .2s;
+  object-fit: cover;
+  border-radius: 10px;
+  width:100px;
+  height:100px;
+}
+.g-produk-riwayat:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+
+
+/*==========================END GAMBAR===============================*/
+.custom-file-label::after {
+    left: 0;
+    right: auto;
+    border-left-width: 0;
+    border-right: inherit;
+}
+.page-item.active .page-link {
+    background-color: #a37171 !important;
+    border: 1px solid black;
+}
+.page-link {
+    color: black !important;
+}
+
+/*==========================Caraousel===============================*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  filter: invert(100%);
+}
+.pricing{
+    padding-bottom: 300px!important;
+}
+/*==========================END Caraousel============================*/
+
+.tombol-login{
+  background-color: #8d5e47 !important;
+}
+
+
+/*==============================CUSTOM field animation====================================*/
+
+
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+/**
+* Add a transition to the label and input.
+* I'm not even sure that touch-action: manipulation works on
+* inputs, but hey, it's new and cool and could remove the 
+* pesky delay.
+*/
+label, input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+input {
+  font-size: 1.5em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+
+label {
+  /* text-transform: uppercase; */
+  letter-spacing: 0.05em;
+}
+/**
+* Translate down and scale the label up to cover the placeholder,
+* when following an input (with placeholder-shown support).
+* Also make sure the label is only on one row, at max 2/3rds of the
+* field—to make sure it scales properly and doesn't wrap.
+*/
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}
+/**
+* By default, the placeholder should be transparent. Also, it should 
+* inherit the transition.
+*/
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+/**
+* Show the placeholder when the input is focused.
+*/
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+/**
+* When the element is focused, remove the label transform.
+* Also, do this when the placeholder is _not_ shown, i.e. when 
+* there's something in the input at all.
+*/
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+/*==============================END CUSTOM field animation====================================*/
+
+
+/* =============================COLOR READ ONLY INPUT=============================== */
+
+input:read-only {
+  background-color: rgb(211, 209, 209);
+}
+
+/* =============================END COLOR READ ONLY INPUT=============================== */
